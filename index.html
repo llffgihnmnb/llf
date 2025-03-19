@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#honors">荣誉奖项</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 首页 -->
+        <section id="home">
+            <h1>欢迎访问我的个人网站</h1>
+            <img src="your-photo.jpg" alt="个人照片" class="avatar">
+            <h2>张三</h2>
+            <p>网页开发者 | 设计师 | 自由职业者</p>
+        </section>
+
+        <!-- 个人简介 -->
+        <section id="about">
+            <h2>个人简介</h2>
+            <p>这里写你的个人简介...</p>
+            <h3>教育背景</h3>
+            <ul>
+                <li>XX大学 - 计算机科学专业 (2018-2022)</li>
+                <li>XX高中 - 理科班 (2015-2018)</li>
+            </ul>
+        </section>
+
+        <!-- 荣誉奖项 -->
+        <section id="honors">
+            <h2>荣誉奖项</h2>
+            <table>
+                <tr>
+                    <th>年份</th>
+                    <th>奖项名称</th>
+                    <th>颁发机构</th>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>最佳网页设计奖</td>
+                    <td>XX协会</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>优秀毕业生</td>
+                    <td>XX大学</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 联系方式 -->
+        <section id="contact">
+            <h2>联系我</h2>
+            <ul>
+                <li>邮箱：your.email@example.com</li>
+                <li>电话：+86 138-XXXX-XXXX</li>
+                <li>GitHub：<a href="https://github.com/yourusername">github.com/yourusername</a></li>
+                <li>LinkedIn：<a href="#">你的LinkedIn链接</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
